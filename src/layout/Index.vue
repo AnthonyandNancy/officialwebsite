@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div class="app">
     <header>
 
-      <div class="sidebar">
+
         <sidebar />
-      </div>
+
 
     </header>
 
@@ -24,6 +24,12 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+.app{
 
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
 </style>

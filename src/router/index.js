@@ -49,16 +49,40 @@ const routes = [
         ]
       },
       {
-        path: '/ls',
+        path: '/lsaa',
         name: 'ls',
         component: () => import(/* webpackChunkName: "about" */ '../views/AAAA.vue'),
-        meta: { title: '张珊' }
+        meta: { title: '张珊aa' }
       },
       {
-        path: '/zs',
+        path: '/zsaa',
         name: 'zs',
         component: () => import(/* webpackChunkName: "about" */ '../views/BBBB.vue'),
-        meta: { title: '李四' }
+        meta: { title: '李四aa' }
+      },
+      {
+        path: '/lsbb',
+        name: 'ls',
+        component: () => import(/* webpackChunkName: "about" */ '../views/AAAA.vue'),
+        meta: { title: '张珊bb' }
+      },
+      {
+        path: '/zsbb',
+        name: 'zs',
+        component: () => import(/* webpackChunkName: "about" */ '../views/BBBB.vue'),
+        meta: { title: '李四bb' }
+      },
+      {
+        path: '/lscc',
+        name: 'ls',
+        component: () => import(/* webpackChunkName: "about" */ '../views/AAAA.vue'),
+        meta: { title: '张珊cc' }
+      },
+      {
+        path: '/zscc',
+        name: 'zs',
+        component: () => import(/* webpackChunkName: "about" */ '../views/BBBB.vue'),
+        meta: { title: '李四cc' }
       }
 
     ]
