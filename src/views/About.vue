@@ -1,8 +1,8 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
-    <el-button type="primary" plain>主要按钮</el-button>
-<!--    <router-view></router-view>-->
+<!--    <h1>This is an about page</h1>-->
+<!--    <el-button type="primary" plain>主要按钮</el-button>-->
+    <router-view></router-view>
   </div>
 </template>
 

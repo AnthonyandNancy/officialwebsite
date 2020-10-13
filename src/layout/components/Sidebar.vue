@@ -2,36 +2,21 @@
 <template>
   <div>
     <!--    第一种方案-->
-    <!--    <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" :router="true" @select="handleSelect">-->
-    <!--      <template v-for="(item , index ) in routes">-->
-    <!--        <el-menu-item v-if="!item.children" :key="index" :index="String(index)" :route="item.path">{{ item.meta.title }}</el-menu-item>-->
+        <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" :router="true" @select="handleSelect">
+          <template v-for="(item , index ) in routes">
+            <el-menu-item v-if="!item.children" :key="index" :index="String(index)" :route="item.path">{{ item.meta.title }}</el-menu-item>
 
-    <!--        <el-submenu v-if="item.children" :key="index" :index="String(index)">-->
-    <!--          <template slot="title">{{ item.meta.title }}</template>-->
-    <!--          <template v-for="(itemChildren , indexChildren ) in item.children">-->
-    <!--            <el-menu-item :key="indexChildren" :index="resolveIndex(index,indexChildren)" :route="itemChildren.path">{{ itemChildren.meta.title }}</el-menu-item>-->
-    <!--          </template>-->
+            <el-submenu v-if="item.children" :key="index" :index="String(index)">
+              <template slot="title">{{ item.meta.title }}</template>
+              <template v-for="(itemChildren , indexChildren ) in item.children">
+                <el-menu-item :key="indexChildren" :index="resolveIndex(index,indexChildren)" :route="itemChildren.path">{{ itemChildren.meta.title }}</el-menu-item>
+              </template>
 
-    <!--        </el-submenu>-->
+            </el-submenu>
 
-    <!--      </template>-->
+          </template>
 
-    <!--    </el-menu>-->
-
-    <!--    第二种方案-->
-    <div class="box">
-      <div class="head">
-
-        <div v-for="(item , index ) in routes" :key="index" class="head-div">
-          <div class="itemHover">   {{ item.meta.title }}
-          
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-
+        </el-menu>
   </div>
 </template>
 
@@ -80,6 +65,9 @@ export default {
         margin-left: 5%;
         list-style: none;
        font-size: 2vh;
+        a{
+          text-decoration: none;
+        }
         .secondItem{
           display: none;
         }
