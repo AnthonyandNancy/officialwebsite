@@ -1,14 +1,10 @@
 <template>
-  <div class="app">
-    <header>
+  <div class="app container">
 
-
-        <sidebar />
-
-
-    </header>
-
+    <sidebar />
+    <br><br><br><br><br>
     <app-main />
+
   </div>
 </template>
 
@@ -25,11 +21,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.app{
-
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-}
+  @import "~bootstrap/scss/bootstrap.scss";
 </style>

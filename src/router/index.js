@@ -26,25 +26,25 @@ const routes = [
             path: '/about/zs',
             name: 'zs',
             component: () => import(/* webpackChunkName: "about" */ '../views/About/ls.vue'),
-            meta: { title: '儿子张珊' }
+            meta: { title: '儿子张珊',role:'About' }
           },
           {
             path: '/about/ls',
             name: 'ls',
             component: () => import(/* webpackChunkName: "about" */ '../views/About/zs.vue'),
-            meta: { title: '儿子李四' }
+            meta: { title: '儿子李四',role:'About' }
           },
           {
             path: '/about/aa',
             name: 'aa',
             component: () => import(/* webpackChunkName: "about" */ '../views/About/aa.vue'),
-            meta: { title: '儿子Aa' }
+            meta: { title: '儿子Aa',role:'About' }
           },
           {
             path: '/about/bb',
             name: 'bb',
             component: () => import(/* webpackChunkName: "about" */ '../views/About/bb.vue'),
-            meta: { title: '儿子Bb' }
+            meta: { title: '儿子Bb',role:'About' }
           }
         ]
       },
@@ -59,30 +59,6 @@ const routes = [
         name: 'zs',
         component: () => import(/* webpackChunkName: "about" */ '../views/BBBB.vue'),
         meta: { title: '李四aa' }
-      },
-      {
-        path: '/lsbb',
-        name: 'ls',
-        component: () => import(/* webpackChunkName: "about" */ '../views/AAAA.vue'),
-        meta: { title: '张珊bb' }
-      },
-      {
-        path: '/zsbb',
-        name: 'zs',
-        component: () => import(/* webpackChunkName: "about" */ '../views/BBBB.vue'),
-        meta: { title: '李四bb' }
-      },
-      {
-        path: '/lscc',
-        name: 'ls',
-        component: () => import(/* webpackChunkName: "about" */ '../views/AAAA.vue'),
-        meta: { title: '张珊cc' }
-      },
-      {
-        path: '/zscc',
-        name: 'zs',
-        component: () => import(/* webpackChunkName: "about" */ '../views/BBBB.vue'),
-        meta: { title: '李四cc' }
       }
 
     ]
