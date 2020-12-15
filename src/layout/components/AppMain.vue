@@ -9,21 +9,20 @@
 <script>
 export default {
   name: 'AppMain',
-  mounted() {
-    console.log(this.$route.path)
-  },
   computed: {
     key() {
       return this.$route.path
     }
+  },
+  mounted() {
+    console.log(this.$route.path)
   }
 }
 </script>
 
 <style scoped lang="scss">
-.app-main{
+// .app-main{
 
-}
-
+// }
 
 </style>
