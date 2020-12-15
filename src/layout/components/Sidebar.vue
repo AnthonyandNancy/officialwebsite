@@ -44,6 +44,7 @@
           <el-menu-item-group>
             <template v-for="(itemChildren, indexChildren) in item.children">
               <el-menu-item
+                v-show="!itemChildren.hidden"
                 :key="indexChildren"
                 :index="itemChildren.path"
                 :route="itemChildren.path"
