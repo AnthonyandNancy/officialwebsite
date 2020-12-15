@@ -58,42 +58,6 @@ const constantRoutes = [{
             component: () =>
                 import ('../views/AAAA.vue'),
             meta: { title: '张珊aa' }
-        },
-        {
-            path: '/zsaa',
-            name: 'zs',
-            component: () =>
-                import ('../views/BBBB.vue'),
-            meta: { title: '李四aa' }
-        },
-        {
-            path: '/lsbb',
-            name: 'ls',
-            component: () =>
-                import ('../views/AAAA.vue'),
-            meta: { title: '张珊bb' }
-        },
-        {
-            path: '/zsbb',
-            name: 'zs',
-            component: () =>
-                import ('../views/BBBB.vue'),
-            meta: { title: '李四bb' }
-        },
-        {
-            path: '/lscc',
-            name: 'ls',
-            component: () =>
-                import ('../views/AAAA.vue'),
-            meta: { title: '张珊cc' }
-        },
-        {
-            path: '/zscc',
-            name: 'zs',
-            component: () =>
-                import ('../views/BBBB.vue'),
-            meta: { title: '李四cc' },
-            hidden: true
         }
     ]
 }]
