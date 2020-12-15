@@ -45,7 +45,7 @@
             <template v-for="(itemChildren, indexChildren) in item.children">
               <el-menu-item
                 :key="indexChildren"
-                :index="resolveIndex(index, indexChildren)"
+                :index="itemChildren.path"
                 :route="itemChildren.path"
               >
                 {{ itemChildren.meta.title }}
