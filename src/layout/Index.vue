@@ -1,14 +1,10 @@
 <template>
   <div class="app">
-    <header>
-
-
-        <sidebar />
-
-
-    </header>
-
-    <app-main />
+    <el-container>
+      <el-header> <sidebar /></el-header>
+      <el-main> <app-main /></el-main>
+      <el-footer>Footer</el-footer>
+    </el-container>
   </div>
 </template>
 
@@ -25,8 +21,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.app{
-
+.app {
   height: 100vh;
   width: 100%;
   position: relative;
